@@ -1,7 +1,7 @@
 baseURL = "https://firstdonoharm.dev"
 # canonifyURLs = true
 languageCode = "en-us"
-title = "The Hippocratic License"
+title = "The Hippocratic License 2.1"
 disableKinds = ["RSS"]
 
 DefaultContentLanguage = "en"
@@ -14,13 +14,10 @@ googleAnalytics = "UA-101929377-4"
 
 [mediaTypes]
 [mediaTypes."text/markdown"]
-suffix = "md"
+suffixes = ["md"]
 
 [mediaTypes."text/plain"]
-suffix = "txt"
-
-[mediaTypes."text/asciidoc"]
-suffix = "adoc"
+suffixes = ["txt"]
 
 [outputFormats]
 [outputFormats.Markdown]
@@ -28,19 +25,9 @@ mediaType = "text/markdown"
 isPlainText = true
 baseName = "LICENSE"
 
-[outputFormats.PlainText]
-mediaType = "text/plain"
-isPlainText = true
-baseName = "LICENSE"
-
-[outputFormats.AsciiDoc]
-mediaType = "text/asciidoc"
-isPlainText = true
-baseName = "LICENSE"
-
 [outputs]
 home = ["html"]
-page = ["html", "markdown", "plaintext", "asciidoc"]
+page = ["html", "markdown"]
 
 # Add all translated languages here.
 [Languages]
